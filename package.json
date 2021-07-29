@@ -1,0 +1,15 @@
+{
+  "name": "h3cz_translator_bot",
+  "version": "1.0.0",
+  "description": "a bot dedicated to translate @h3cz's tweets",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erick Lojano",
+  "license": "ISC",
+  "dependencies": {
+    "googletrans": "^1.0.2",
+    "twit": "^2.2.11"
+  }
+}
