@@ -9,7 +9,9 @@
   "author": "Erick Lojano",
   "license": "ISC",
   "dependencies": {
-    "googletrans": "^1.0.2",
+    "@google-cloud/translate": "^6.2.6",
+    "dotenv": "^10.0.0",
+    "needle": "^2.8.0",
     "twit": "^2.2.11"
   }
 }
