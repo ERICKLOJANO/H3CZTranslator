@@ -1,4 +1,4 @@
-console.log("this bot has been conceived");
+console.log("this bot has been started");
 
 //TRANSLATOR LIBRARY CONFIGURATIONS
 const {Translate} = require('@google-cloud/translate').v2;
