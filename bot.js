@@ -38,7 +38,7 @@ const streamURL = 'https://api.twitter.com/2/tweets/search/stream?tweet.fields=c
 
 // Edit rules as desired below
 const rules = [{
-        'value': 'from:ignorerick',
+        'value': 'from:H3CZ',
     },
 ];
 
@@ -194,7 +194,7 @@ const translateText = async(text, targetLanguage) =>{
 function tweetIt(txt, id){
 
     var rawText = txt.toString();
-    var handle = "@IGNORErick"
+    var handle = "@H3CZ"
     var tweetID = id;
 
     var englishText = replaceSpecialChars(rawText);
