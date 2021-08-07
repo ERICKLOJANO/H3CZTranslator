@@ -1,4 +1,4 @@
-# @H3CZenEspanol Bot
+# [@H3CZenEspanol Bot](http://twitter.com/H3CZenEspanol)
 By Erick Lojano
 
 # About this Bot
