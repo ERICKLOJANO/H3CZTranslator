@@ -121,8 +121,8 @@ function streamConnect(retryAttempt) {
     stream.on('data', data => {
         try {
             const json = JSON.parse(data);
-            console.log(json);
-            console.log("this is working!")
+            //console.log(json);
+            console.log("tweet has been retrieved, this is working!\n");
             tweetIt(json.data.text, json.data.id)
             // A successful connection resets retry count.
             retryAttempt = 0;
@@ -202,7 +202,7 @@ function tweetIt(txt, id){
 
     async function getTranslatedText(textToTranslate, idOfTweet, userHandle) {
         var spanishText = await translateText(textToTranslate, 'es');
-        console.log("first function: " + spanishText);
+        console.log("Tweeting out: " + spanishText + "\n");
 
         T.post('statuses/update', {in_reply_to_status_id: idOfTweet, status: userHandle + ' '  + spanishText}, tweeted);
 
@@ -214,7 +214,7 @@ function tweetIt(txt, id){
     
     function tweeted(err, data, response){
         if(err){
-            console.log("Something went wrong!");
+            console.log("Something went wrong!\n");
         }
         else{
             console.log("It worked!\n");
